@@ -46,10 +46,3 @@ export class EmpresaComponent implements OnInit {
   }
 
 }
-
-
-// id:number
-// razao:string
-// valorFrete:number
-// cnpj:string
-

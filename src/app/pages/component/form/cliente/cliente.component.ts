@@ -28,7 +28,7 @@ export class ClienteComponent implements OnInit {
   public async salvar(){
     try{
       await new ClienteServico(this.http).salvar(this.cliente)
-      this.router.navigateByUrl("/tabela")
+      this.router.navigateByUrl("/home")
     }
     catch(e:any){
       this.mensagem = e.error.mensagem
