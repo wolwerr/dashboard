@@ -12,6 +12,7 @@ import { HttpClientModule  } from '@angular/common/http';
 import { TabelaClienteComponent } from './pages/component/tabela-cliente/tabela-cliente.component';
 import { TabelaEmpresaComponent } from './pages/component/tabela-empresa/tabela-empresa.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,6 @@ import { TabelaEmpresaComponent } from './pages/component/tabela-empresa/tabela-
     ClienteComponent,
     TabelaClienteComponent,
     TabelaEmpresaComponent,
-
   ],
   imports: [
     BrowserModule,

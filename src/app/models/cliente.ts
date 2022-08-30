@@ -5,8 +5,8 @@ export interface Cliente{
   senha:string
   cpf:string
   cep:string
-  endereco:string
-  numero:number
+  rua: string
+  numero:string
   bairro:string
   cidade:string
   estado:string

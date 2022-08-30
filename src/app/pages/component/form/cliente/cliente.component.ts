@@ -23,7 +23,7 @@ export class ClienteComponent implements OnInit {
 
   public cliente:Cliente = {} as Cliente
   public cep:Cep|undefined = {} as Cep
-  public mensagem:String = ""
+  public mensagem:string = ""
 
   public async salvar(){
     try{
@@ -38,10 +38,12 @@ export class ClienteComponent implements OnInit {
   public async buscaViaCep(){
     this.cep = await new CepServico(this.http).getViaCep(this.cliente.cep)
     if(this.cep){
-      this.cliente.endereco = this.cep.logradouro
+      this.cliente.rua = this.cep.logradouro
       this.cliente.bairro = this.cep.bairro
       this.cliente.cidade = this.cep.localidade
       this.cliente.estado = this.cep.uf
+      this.cliente.numero
+      this.cliente.cpf
     }
   }
 

@@ -38,10 +38,13 @@ export class EmpresaComponent implements OnInit {
   public async buscaViaCep(){
     this.cep = await new CepServico(this.http).getViaCep(this.empresa.cep)
     if(this.cep){
-      this.empresa.endereco = this.cep.logradouro
+      this.empresa.rua = this.cep.logradouro
       this.empresa.bairro = this.cep.bairro
       this.empresa.cidade = this.cep.localidade
       this.empresa.estado = this.cep.uf
+      this.empresa.numero
+      this.empresa.cnpj
+      this.empresa.razao
     }
   }
 

@@ -5,6 +5,7 @@ import { EmpresaComponent } from './pages/component/form/empresa/empresa.compone
 import { HomeComponent } from './pages/component/home/home.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'formCliente', component: ClienteComponent },
   { path: 'formEmpresa', component: EmpresaComponent },

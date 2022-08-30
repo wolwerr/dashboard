@@ -2,18 +2,18 @@
 <table class="table" *ngIf="empresas && empresas.length > 0">
   <thead>
     <tr>
-      <th scope="col">Nome:</th>
-      <th scope="col">CPF:</th>
-      <th scope="col">Email</th>
-      <th scope="col">Endereço</th>
+      <th scope="col">Razão Social:</th>
+      <th scope="col">CNPJ:</th>
+      <th scope="col">Rua:</th>
+      <th scope="col">Valor do Frete:</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let empresa of empresas">
       <td>{{empresa.razao}}</td>
       <td>{{empresa.cnpj}}</td>
+      <td>{{empresa.rua}}</td>
       <td>{{empresa.valorFrete}}</td>
-      <td>{{empresa.endereco}}</td>
     </tr>
   </tbody>
 </table>

@@ -6,7 +6,7 @@ export class EmpresaServico{
   constructor(private http: HttpClient){ }
 
   public async salvar(empresa:Empresa){
-      await this.http.post<Empresa>(`${environment.apiHost}/clientes.json`, empresa).toPromise()
+      await this.http.post<Empresa>(`${environment.apiHost}/empresa.json`, empresa).toPromise()
   }
 
   public async all(){
